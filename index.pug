@@ -1,0 +1,55 @@
+mixin faces(direction)
+  each val in new Array(9) 
+    .face(class=direction)
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no')
+    link(rel='manifest' href='./manifest.webmanifest')
+    link(rel='shortcut icon' href='./favicon.ico')
+    meta(name='apple-mobile-web-app-capable' content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
+    meta(name='apple-mobile-web-app-title' content='Defold CSS logo')
+
+    link(rel='shortcut icon' href='./images/icons/favicon.ico')
+    link(rel='icon' type='image/png' sizes='16x16' href='./images/icons/icons_favicon-16x16.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='./images/icons/icons_favicon-32x32.png')
+    link(rel='apple-touch-icon' sizes='180x180' href='./images/icons/icons_apple-touch-icon.png')
+    link(rel='mask-icon' href='./images/icons/mask-icons_pinned-tab.svg' color='ffffff')
+    meta(name='msapplication-TileColor' content='#121924')
+    meta(name='theme-color' content='#121924')
+    link(rel='apple-touch-startup-image' href='./images/splash-screens/splash_launch-640x1136.png' media='(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)')
+    link(rel='apple-touch-startup-image' href='./images/splash-screens/splash_launch-750x1294.png' media='(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)')
+    link(rel='apple-touch-startup-image' href='./images/splash-screens/splash_launch-1242x2148.png' media='(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)')
+    link(rel='apple-touch-startup-image' href='./images/splash-screens/splash_launch-1125x2436.png' media='(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)')
+    link(rel='apple-touch-startup-image' href='./images/splash-screens/splash_launch-1536x2048.png' media='(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)')
+    link(rel='apple-touch-startup-image' href='./images/splash-screens/splash_launch-1668x2224.png' media='(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)')
+    link(rel='apple-touch-startup-image' href='./images/splash-screens/splash_launch-2048x2732.png' media='(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)')
+
+    title='Defold CSS logo'
+    link(rel='stylesheet', href='./index.css')    
+  body
+
+    #app.front-cover
+      .logo
+        .scene
+          .zoom
+            .object          
+              +faces('bottom')
+              +faces('front')
+              +faces('right')
+              +faces('back')
+              +faces('left')
+              +faces('top') 
+              
+              .face.bottom       
+              .face.front        
+              .face.right        
+              .face.back      
+              .face.left        
+              .face.top       
+        img(src="./images/defold-text.svg", alt="Defold" width="142px")
+
+    script(src='./index.js')

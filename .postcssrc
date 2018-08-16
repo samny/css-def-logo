@@ -1,0 +1,9 @@
+{
+  "modules": false,
+  "plugins": {
+    "postcss-nested": true,
+    "autoprefixer": {
+      "grid": true
+    }
+  }
+}
