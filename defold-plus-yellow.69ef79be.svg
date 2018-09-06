@@ -7,8 +7,8 @@
 </style>
 <title>defold-plus-yellow</title>
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="25" y1="125" x2="125" y2="25" gradientTransform="matrix(1 0 0 -1 0 150)">
-	<stop  offset="0" style="stop-color:#FD6623"/>
-	<stop  offset="1" style="stop-color:#FFD313"/>
+	<stop  offset="0" style="stop-color:#fb331f"/>
+	<stop  offset="1" style="stop-color:#fecb14"/>
 </linearGradient>
 <polygon class="st0" points="100,0 50,0 50,50 0,50 0,100 50,100 50,150 100,150 100,100 150,100 150,50 100,50 "/>
 </svg>
